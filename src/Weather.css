@@ -1,0 +1,13 @@
+.Weather .container {
+  margin-top: 100px;
+}
+
+.Weather .card {
+  background: #f2f9f1;
+  color: #155263;
+  padding: 15px;
+  font-family: "Onest", sans-serif;
+  width: 500px;
+  display: block;
+  margin: 0 auto;
+}
