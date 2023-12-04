@@ -11,7 +11,7 @@ export default function TemperatureDetails() {
   return (
     <div className="TemperatureDetails">
       <div className="mainIcon">
-        <img src={TemperatureDetailsValues.imgUrl} alt="" />
+        <img src={TemperatureDetailsValues.imgUrl} alt="weather icon" />
       </div>
 
       <h6 className="dailyValues">
