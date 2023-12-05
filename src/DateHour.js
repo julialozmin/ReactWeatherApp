@@ -13,7 +13,7 @@ export default function DateHour() {
           <h6 className="dateHour">{dateHourData.date}</h6>
         </div>
         <div className="col-3">
-          <h6 className="dateHour">{dateHourData.hour}</h6>
+          <h6 className="dateHour text-end">{dateHourData.hour}</h6>
         </div>
       </div>
     </div>
