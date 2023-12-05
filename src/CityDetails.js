@@ -14,7 +14,7 @@ export default function CityDetails() {
       <h1>{cityDetailsValues.degrees}</h1>
 
       <h1 className="degreesMeasurement">
-        <a href="#">C</a>/<a href="#">F</a>
+        <a href="/">C</a>/<a href="/">F</a>
       </h1>
     </div>
   );
