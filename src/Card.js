@@ -1,16 +1,16 @@
 import React from "react";
-import "./Weather.css";
+import "./Card.css";
 import Form from "./Form";
 import DateHour from "./DateHour";
 import CityDetails from "./CityDetails";
 import TemperatureDetails from "./TemperatureDetails";
 import Forecast from "./Forecast";
 
-export default function Weather() {
+export default function Card() {
   return (
-    <div className="Weather">
+    <div className="Card">
       <div className="container">
-        <div className="card">
+        <div className="cardStructure">
           <div className="row">
             <div className="col-12">
               <Form />
@@ -37,17 +37,6 @@ export default function Weather() {
             </div>
           </div>
         </div>
-        <small>
-          Coded by{" "}
-          <a href="http://www.linkedin.com/in/julia-lozoya-25a400146">
-            Julia Lozoya
-          </a>
-          , available open source on{" "}
-          <a href="https://github.com/julialozmin/ReactWeatherApp.git">
-            GitHub
-          </a>{" "}
-          and hosted on <a href="https://www.netlify.com/">Netlify</a>
-        </small>
       </div>
     </div>
   );

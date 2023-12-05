@@ -1,8 +1,10 @@
-.Weather .container {
+.Card .container {
   margin-top: 100px;
 }
 
-.Weather .card {
+.Card .cardStructure {
+  border-radius: 4px;
+  border: 1px solid #155263;
   background: #f2f9f1;
   color: #155263;
   padding: 15px;
