@@ -2,7 +2,6 @@ import React from "react";
 import "./DateHour.css";
 
 export default function DateHour(props) {
-  console.log(props);
   let dateHourData = new Date(props.timestamp * 1000);
   let days = [
     "Sunday",
@@ -35,10 +34,11 @@ export default function DateHour(props) {
   let minutes = dateHourData.getMinutes();
   if (hours < 10) {
     hours = `0${hours}`;
-    if (minutes < 10) {
-      minutes = `0${minutes}`;
-    }
   }
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
+
   return (
     <div className="DateHour">
       <div className="row">
