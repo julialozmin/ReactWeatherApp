@@ -1,18 +1,13 @@
 import React from "react";
-import axios from "axios";
 import "./CityDetails.css";
 
-export default function CityDetails() {
-  let cityDetailsValues = {
-    city: "Chieti",
-    description: "Mist",
-    degrees: "0º",
-  };
+export default function CityDetails(props) {
+  let roundedTemperature = Math.round(props.data.temperature);
   return (
     <div className="CityDetails">
-      <h2>{cityDetailsValues.city}</h2>
-      <h6>{cityDetailsValues.description}</h6>
-      <h1>{cityDetailsValues.degrees}</h1>
+      <h2>{props.data.city}</h2>
+      <h6 className="text-capitalize">{props.data.weatherDescription}</h6>
+      <h1>{roundedTemperature}º</h1>
 
       <h1 className="degreesMeasurement">
         <a href="/">C</a>/<a href="/">F</a>
