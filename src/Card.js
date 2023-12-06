@@ -84,7 +84,7 @@ export default function Card(props) {
           </div>
 
           <div className="col-4">
-            <Forecast />
+            <Forecast city={weatherData.city} />
           </div>
         </div>
       </div>
