@@ -11,8 +11,8 @@ export default function Card(props) {
   const [weatherData, setWeatherData] = useState({});
   const [city, setCity] = useState(props.defaultCity);
   function handleResponse(response) {
-    console.log(response.data);
     setWeatherData({
+      timestamp: response.data.time,
       city: response.data.city,
       weatherDescription: response.data.condition.description,
       temperature: response.data.temperature.current,
@@ -68,7 +68,7 @@ export default function Card(props) {
           <div className="col-8">
             <div className="row">
               <div className="col-12">
-                <DateHour />
+                <DateHour timestamp={weatherData.timestamp} />
               </div>
             </div>
 
