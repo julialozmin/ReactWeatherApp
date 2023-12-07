@@ -52,13 +52,7 @@ export default function Card(props) {
                   onChange={handleCityChange}
                 />
                 <button className="btn btn-outline-secondary" type="button">
-                  Search
-                </button>
-                <button
-                  className="btn btn-outline-secondary-current"
-                  type="button"
-                >
-                  Current Location
+                  Search city
                 </button>
               </div>
             </form>

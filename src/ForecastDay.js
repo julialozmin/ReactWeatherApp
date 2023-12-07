@@ -2,7 +2,6 @@ import React from "react";
 import "./ForecastDay.css";
 
 export default function ForecastDay(props) {
-  console.log(props.dailyValues);
   function displayDay() {
     let dateHourData = new Date(props.dailyValues.time * 1000);
     let weekday = dateHourData.getDay();
