@@ -11,14 +11,25 @@ function App() {
 
         <small>
           Coded by{" "}
-          <a href="http://www.linkedin.com/in/julia-lozoya-25a400146">
+          <a
+            href="http://www.linkedin.com/in/julia-lozoya-25a400146"
+            target="_blank"
+            rel="noreferrer"
+          >
             Julia Lozoya
           </a>
           , available open source on{" "}
-          <a href="https://github.com/julialozmin/ReactWeatherApp.git">
+          <a
+            href="https://github.com/julialozmin/ReactWeatherApp.git"
+            target="_blank"
+            rel="noreferrer"
+          >
             GitHub
           </a>{" "}
-          and hosted on <a href="https://www.netlify.com/">Netlify</a>
+          and hosted on{" "}
+          <a href="https://www.netlify.com/" target="_blank" rel="noreferrer">
+            Netlify
+          </a>
         </small>
       </div>
     </div>

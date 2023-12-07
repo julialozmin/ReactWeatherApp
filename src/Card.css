@@ -24,3 +24,9 @@
   background-color: #155263;
   color: #fff;
 }
+
+.loader {
+  max-width: 150px;
+  display: block;
+  margin: 0 auto;
+}

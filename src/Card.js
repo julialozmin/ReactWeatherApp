@@ -5,6 +5,7 @@ import DateHour from "./DateHour";
 import CityDetails from "./CityDetails";
 import TemperatureDetails from "./TemperatureDetails";
 import Forecast from "./Forecast";
+import { LineWave } from "react-loader-spinner";
 
 export default function Card(props) {
   const [ready, setReady] = useState(false);
@@ -85,6 +86,19 @@ export default function Card(props) {
     );
   } else {
     search();
-    return <p>"Loading..."</p>;
+    return (
+      <div className="loader text-center">
+        <LineWave
+          height="300"
+          width="300"
+          color="#155263"
+          ariaLabel="line-wave"
+          wrapperStyle={{}}
+          wrapperClass=""
+          visible={true}
+          className="loaderItem"
+        />
+      </div>
+    );
   }
 }
