@@ -10,17 +10,14 @@
   margin: 0 auto;
 }
 
-.Card .btn-outline-secondary:hover {
-  background-color: #155263;
-}
-.Card .btn-outline-secondary-current {
+.Card .btn-outline-secondary {
   text-align: center;
   cursor: pointer;
   color: #6c757d;
   border: var(--bs-btn-border-width) solid var(--bs-btn-border-color);
   border-color: #6c757d;
 }
-.Card .btn-outline-secondary-current:hover {
+.Card .btn-outline-secondary:hover {
   background-color: #155263;
   color: #fff;
 }
