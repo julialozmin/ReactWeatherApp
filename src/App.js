@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <Card defaultCity="Chieti" />
+        <Card defaultCity="Rome" />
 
         <small>
           Coded by{" "}

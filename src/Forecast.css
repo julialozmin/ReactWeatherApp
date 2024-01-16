@@ -1,7 +1,7 @@
 .Forecast ul {
   padding: 0;
   line-height: 2.5;
-  margin-bottom: 5px;
+  margin: 16px 0 5px;
 }
 
 .Forecast li {

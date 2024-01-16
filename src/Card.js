@@ -6,6 +6,7 @@ import CityDetails from "./CityDetails";
 import TemperatureDetails from "./TemperatureDetails";
 import Forecast from "./Forecast";
 import { LineWave } from "react-loader-spinner";
+import CityName from "./CityName";
 
 export default function Card(props) {
   const [ready, setReady] = useState(false);
@@ -52,7 +53,11 @@ export default function Card(props) {
                   aria-describedby="button-addon2"
                   onChange={handleCityChange}
                 />
-                <button className="btn btn-outline-secondary" type="button">
+                <button
+                  className="btn btn-outline-secondary"
+                  type="button"
+                  onClick={handleSubmit}
+                >
                   Search city
                 </button>
               </div>
@@ -64,6 +69,11 @@ export default function Card(props) {
             <div className="row">
               <div className="col-12">
                 <DateHour timestamp={weatherData.timestamp} />
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-12">
+                <CityName data={weatherData} />
               </div>
             </div>
 
