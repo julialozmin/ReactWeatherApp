@@ -1,9 +1,23 @@
 .Forecast ul {
-  padding: 0;
+  padding-top: 16px;
   line-height: 2.5;
-  margin: 16px 0 5px;
+  margin: 6px 0 5px;
 }
 
 .Forecast li {
   list-style: none;
+}
+
+@media (max-width: 576px) {
+  .Forecast {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .Forecast ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 12px;
+    grid-row-gap: 0px;
+  }
 }

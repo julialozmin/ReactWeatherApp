@@ -43,12 +43,12 @@ export default function DateHour(props) {
     <div className="DateHour">
       <div className="row">
         <div className="col-9">
-          <h6 className="dateHour">
+          <h6 className="dateHour date text-start">
             {currentWeekday}, {currentDate} {currentMonth} {currentYear}
           </h6>
         </div>
         <div className="col-3">
-          <h6 className="dateHour text-end">
+          <h6 className="dateHour hour text-end">
             {hours}:{minutes}
           </h6>
         </div>

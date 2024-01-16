@@ -65,7 +65,7 @@ export default function Card(props) {
           </div>
         </div>
         <div className="row">
-          <div className="col-8">
+          <div className="col-sm-8">
             <div className="row">
               <div className="col-12">
                 <DateHour timestamp={weatherData.timestamp} />
@@ -88,7 +88,7 @@ export default function Card(props) {
             </div>
           </div>
 
-          <div className="col-4">
+          <div className="col-sm-4">
             <Forecast city={weatherData.city} />
           </div>
         </div>
