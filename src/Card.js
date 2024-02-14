@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
-import "./Card.css";
+import "./styles/Card.css";
+
 import DateHour from "./DateHour";
 import CityDetails from "./CityDetails";
 import TemperatureDetails from "./TemperatureDetails";
@@ -12,6 +13,7 @@ export default function Card(props) {
   const [ready, setReady] = useState(false);
   const [weatherData, setWeatherData] = useState({});
   const [city, setCity] = useState(props.defaultCity);
+
   function handleResponse(response) {
     setWeatherData({
       timestamp: response.data.time,

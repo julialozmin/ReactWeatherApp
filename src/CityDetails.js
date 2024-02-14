@@ -1,6 +1,6 @@
 import React from "react";
 import TemperatureUnits from "./TemperatureUnits";
-import "./CityDetails.css";
+import "./styles/CityDetails.css";
 
 export default function CityDetails(props) {
   return (
